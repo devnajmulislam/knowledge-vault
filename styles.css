@@ -316,7 +316,7 @@ body {
 
 }
 
-.solution-right-side .description{
+.solution-right-side .description {
     color: #627382;
     font-weight: 400;
     font-size: 16px;
@@ -324,11 +324,125 @@ body {
     margin-bottom: 40px;
 }
 
-.solution-features-container .feature-item{
+.solution-features-container .feature-item {
     display: flex;
     align-items: center;
     gap: 6px;
 
     margin-bottom: 16px;
+}
 
+/* THINK SECTION STYLES */
+.think-section {
+    max-width: 1360px;
+    margin: 120px auto;
+    padding: 80px 0px;
+    background-color: #F7F6F2;
+
+    text-align: center;
+
+}
+
+.think-section .think-title {
+    font-weight: 700;
+    color: #001931;
+    font-size: 40px;
+
+    margin-bottom: 16px;
+}
+
+.think-section .think-description {
+    font-weight: 400;
+    color: #627382;
+    font-size: 16px;
+
+    margin-bottom: 24px;
+}
+
+.think-section .think-btn-wraper {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto 16px auto;
+
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 4px;
+    padding: 12px 16px;
+    background-color: #30B868;
+}
+
+.think-section .think-btn-wraper>a {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.think-section .think-btn-wraper>img {
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+}
+
+.think-section .think-des-two {
+    color: #627382;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+/* FOOTER SECTION STYLES */
+footer {
+    background-color: #001931;
+}
+
+.footer-section {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 120px 0px 30px 0px;
+
+
+}
+
+.logo-social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-social-container .social-links {
+    text-align: center;
+}
+
+.social-links img {
+    margin-left: 16px;
+}
+
+.social-links .social-link-title {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+
+    margin-bottom: 16px;
+}
+
+.social-links .social-link-img {
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+}
+
+.footer-section .hr-line {
+    border: 1px solid #5c5c61d8;
+    margin: 80px 0px 30px 0px;
+}
+
+.footer-section .copyright-description {
+    color: #FAFAFA;
+    font-weight: 400;
+    font-size: 16px;
+
+    text-align: center;
 }
