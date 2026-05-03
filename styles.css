@@ -349,6 +349,8 @@ body {
     font-size: 40px;
 
     margin-bottom: 16px;
+    text-transform: capitalize;
+
 }
 
 .think-section .think-description {
@@ -445,4 +447,265 @@ footer {
     font-size: 16px;
 
     text-align: center;
+}
+
+/* RESPONSIVE STYLES */
+
+/* TABLET: max-width 1024px */
+@media (max-width: 1024px) {
+
+    /* NAV */
+    .nav-container {
+        padding: 0 24px;
+    }
+    .nav-container .nav-middle-content ul {
+        gap: 20px;
+    }
+
+    /* HERO */
+    .hero-section-container .hero-section {
+        padding: 80px 60px 140px 60px;
+    }
+    .hero-section .hero-content h2 {
+        font-size: 56px;
+    }
+
+    /* DOES SECTION */
+    .does-section-container {
+        padding: 0 24px;
+    }
+    .does-section-container .does-section-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .does-section-cards .card-1,
+    .does-section-cards .card-2,
+    .does-section-cards .card-3,
+    .does-section-cards .card-4 {
+        width: calc(50% - 20px);
+        height: auto;
+        min-height: 260px;
+    }
+    .does-section-cards .img-container {
+        margin: 24px auto 10px auto;
+    }
+
+    /* SOLUTION SECTION */
+    .solution-section-container {
+        padding: 0 24px;
+        gap: 40px;
+    }
+    .solution-section-container > div:first-child img {
+        width: 100%;
+        max-width: 420px;
+    }
+    .solution-right-side .solution-heading {
+        font-size: 38px;
+    }
+
+    /* THINK SECTION */
+    .think-section {
+        margin: 80px 24px;
+        padding: 60px 24px;
+    }
+
+    /* FOOTER */
+    .footer-section {
+        padding: 80px 24px 30px 24px;
+    }
+}
+
+/* MOBILE: max-width 768px */
+@media (max-width: 768px) {
+
+    /* HEADER / NAV */
+    .header-section {
+        padding: 16px 20px;
+    }
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 0;
+    }
+    .nav-container .nav-middle-content {
+        order: 3;
+        width: 100%;
+    }
+    .nav-container .nav-middle-content ul {
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .nav-container .nav-right-btn {
+        order: 2;
+        width: auto;
+        height: 40px;
+        padding: 10px 14px;
+    }
+    .nav-container .nav-right-btn a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* HERO */
+    .hero-section-container .hero-section {
+        padding: 60px 24px 100px 24px;
+    }
+    .hero-section .early-access {
+        width: 190px;
+    }
+    .hero-section .hero-content h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .hero-section .hero-content p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .hero-section .hero-btn-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+    .hero-section .hero-btn-container .btn-1,
+    .hero-section .hero-btn-container .btn-2 {
+        width: 260px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* DOES SECTION */
+    .does-section-container > h2 {
+        font-size: 32px;
+        padding: 0 16px;
+    }
+    .does-section-container > p {
+        padding: 0 16px;
+    }
+    .does-section-container .does-section-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 16px;
+    }
+    .does-section-cards .card-1,
+    .does-section-cards .card-2,
+    .does-section-cards .card-3,
+    .does-section-cards .card-4 {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        min-height: unset;
+    }
+    .does-section-cards .img-container {
+        margin: 16px auto 12px auto;
+    }
+
+    /* SOLUTION SECTION */
+    .solution-section-container {
+        flex-direction: column;
+        margin: 60px auto;
+        padding: 0 20px;
+        gap: 30px;
+        text-align: center;
+    }
+    .solution-section-container > div:first-child {
+        width: 100%;
+        text-align: center;
+    }
+    .solution-section-container > div:first-child img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .solution-right-side .title {
+        margin-top: 0;
+    }
+    .solution-right-side .solution-heading {
+        font-size: 32px;
+    }
+    .solution-features-container .feature-item {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    /* THINK SECTION */
+    .think-section {
+        margin: 60px 16px;
+        padding: 50px 20px;
+    }
+    .think-section .think-title {
+        font-size: 28px;
+    }
+    .think-section .think-description {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    .think-section .think-btn-wraper {
+        width: 220px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* FOOTER */
+    .footer-section {
+        padding: 60px 20px 30px 20px;
+    }
+    .logo-social-container {
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+    }
+    .logo-social-container .social-links {
+        text-align: left;
+    }
+    .footer-section .hr-line {
+        margin: 40px 0 24px 0;
+    }
+}
+
+/* SMALL MOBILE: max-width 480px */
+@media (max-width: 480px) {
+
+    /* NAV */
+    .nav-container .nav-middle-content ul {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .hero-section-container .hero-section {
+        padding: 40px 16px 80px 16px;
+    }
+    .hero-section .hero-content h2 {
+        font-size: 32px;
+    }
+    .hero-section .hero-content p {
+        font-size: 14px;
+        padding: 0;
+    }
+    .hero-section .hero-btn-container .btn-1,
+    .hero-section .hero-btn-container .btn-2 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* DOES SECTION */
+    .does-section-container > h2 {
+        font-size: 26px;
+    }
+
+    /* SOLUTION SECTION */
+    .solution-right-side .solution-heading {
+        font-size: 26px;
+    }
+
+    /* THINK SECTION */
+    .think-section .think-title {
+        font-size: 24px;
+    }
+    .think-section .think-btn-wraper {
+        width: 100%;
+        max-width: 280px;
+    }
 }
